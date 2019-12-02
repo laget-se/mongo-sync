@@ -126,7 +126,7 @@ function load_configs {
         DEST_CREDENTIALS="-u $dest_username -p $dest_password"
     fi
 
-    TMPDIR=/tmp/"$source_db"/dump
+    TMPDIR=/tmp/mongo-sync/"$source_db"
 }
 
 function banner {
