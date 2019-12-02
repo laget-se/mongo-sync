@@ -9,7 +9,7 @@
 - Download / Clone the script
 
     ```bash
-    git clone https://github.com/sheharyarn/mongo-sync.git
+    git clone https://github.com/laget-se/mongo-sync.git
     cd mongo-sync
     ```
 
