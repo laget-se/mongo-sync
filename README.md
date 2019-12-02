@@ -41,7 +41,7 @@
 
 ## Contributing
 
-1. [Fork it](https://github.com/sheharyarn/mongo-sync/fork)
+1. [Fork it](https://github.com/laget-se/mongo-sync/fork)
 2. Create your feature/fix branch (`git checkout -b feature/my-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin feature/my-feature`)
