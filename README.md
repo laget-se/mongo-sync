@@ -1,7 +1,7 @@
 [mongo-sync]
 =================================================================================
 
-> _Sync Remote and Local MongoDB Databases in Bash.!_
+> _Sync MongoDB Databases in Bash.!_
 
 
 ## Usage
