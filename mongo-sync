@@ -218,7 +218,7 @@ else
     shift
 
     while [ "${1+defined}" ]; do
-        if [ "$1" == '--config' ] ; then
+        if [ "$1" == '-c' ] || [ "$1" == '--config' ] ; then
             shift
             if [ -e "$1" ] ; then
                 CONFIG_FILE="$1"

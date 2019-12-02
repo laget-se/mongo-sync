@@ -24,7 +24,7 @@
 - Options
 	```
 	-y (--yes)                     # Skip confirmation
-	--config file.yml              # Use alternative config file
+	-c (--config) file.yml         # Use alternative config file
 	```
 
 ## Notes
