@@ -31,7 +31,7 @@
 ## Notes
 
  - `mongo-sync` requires `mongodump` and `mongorestore` binaries to be installed in your system. If you have [`mongodb`](http://docs.mongodb.org/manual/tutorial/#getting-started) installed, then you probably already have them
- - Pushing/Pulling ***overwrites*** the destination DB
+ - Pushing/Synchronizing ***overwrites*** the destination DB
  - It's a good idea to keep your alternative/custom `config.yml` in `.gitignore` if you're using it inside some other project
 
 
