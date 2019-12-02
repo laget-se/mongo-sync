@@ -239,6 +239,10 @@ else
         pull $skip
     elif [[ "$action" == 'sync' ]] ; then
         sync $skip
+    elif [[ "$action" == 'clean' ]] ; then
+        cleanup $skip
+        success_msg
+        done_msg
     else
         usage_error "unrecognized command \"$action\""
     fi

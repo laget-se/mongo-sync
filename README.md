@@ -20,6 +20,7 @@
 	./mongo-sync push [options]    # Push DB to Destination
 	./mongo-sync pull [options]    # Pull DB from Source
 	./mongo-sync sync [options]    # Pull & Push
+	./mongo-sync clean [options]   # Cleanup, removes all pulled data
 	```
 - Options
 	```
