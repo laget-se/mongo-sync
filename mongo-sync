@@ -199,6 +199,7 @@ function sync {
     pull
     push
 
+    cleanup
     success_msg
     done_msg
 }
