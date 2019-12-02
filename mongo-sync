@@ -241,7 +241,7 @@ else
         sync $skip
     elif [[ "$action" == 'clean' ]] ; then
         banner
-        if [ "$1" == false ] ; then
+        if [ $skip == false ] ; then
             get_confirmation 'clean'
         fi
         load_configs
