@@ -2,30 +2,16 @@
 
 source:
   db: 'local_db_name'
-  host:
-    url: 'some.url.com'
-    port: 27017
-  access:
-    username: 'mongo_user'
-    password: 'mongo_pass'
+  host: 'some.url.com'
+  username: 'mongo_user'
+  password: 'mongo_pass'
+  authentication:
+    db: 'admin'
 
 dest:
   db: 'remote_db_name'
-  host:
-    url: 'some.url.com'
-    port: 27017
-  access:
-    username: 'mongo_user'
-    password: 'mongo_pass'
-
-tunnel:
-  on: false
-  access:
-    username: 'remote_ssh_user'
-    port: 22
-
-# For now :local just
-# assumes DB is at localhost:port
-
-# All of the parameters above are required,
-# without them, the script will fail
+  host: 'some.url.com'
+  username: 'mongo_user'
+  password: 'mongo_pass'
+  authentication:
+    db: 'admin'
