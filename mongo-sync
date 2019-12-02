@@ -240,7 +240,14 @@ else
     elif [[ "$action" == 'sync' ]] ; then
         sync $skip
     elif [[ "$action" == 'clean' ]] ; then
+        banner
+        if [ "$1" == false ] ; then
+            get_confirmation 'push'
+        fi
+        load_configs
+
         cleanup $skip
+
         success_msg
         done_msg
     else
