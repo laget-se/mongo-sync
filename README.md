@@ -10,17 +10,17 @@
 
     ```bash
     git clone https://github.com/laget-se/mongo-sync.git
-    cd mongo-sync
+    cd mongos
     ```
 
 - Edit `config.yml` and insert your configuration details
 
 - Use the script like this:
 	```bash
-	./mongo-sync push [options]    # Push DB to Destination
-	./mongo-sync pull [options]    # Pull DB from Source
-	./mongo-sync sync [options]    # Pull & Push
-	./mongo-sync clean [options]   # Cleanup, removes all pulled data
+	./mongos push [options]    # Push DB to Destination
+	./mongos pull [options]    # Pull DB from Source
+	./mongos sync [options]    # Pull & Push
+	./mongos clean [options]   # Cleanup, removes all pulled data
 	```
 - Options
 	```
@@ -30,7 +30,7 @@
 
 ## Notes
 
- - `mongo-sync` requires `mongodump` and `mongorestore` binaries to be installed in your system. If you have [`mongodb`](http://docs.mongodb.org/manual/tutorial/#getting-started) installed, then you probably already have them
+ - `mongos` requires `mongodump` and `mongorestore` binaries to be installed in your system. If you have [`mongodb`](http://docs.mongodb.org/manual/tutorial/#getting-started) installed, then you probably already have them
  - Pushing/Synchronizing ***overwrites*** the destination DB
  - It's a good idea to keep your alternative/custom `config.yml` in `.gitignore` if you're using it inside some other project
 

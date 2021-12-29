@@ -32,8 +32,8 @@ function error {
 trap 'error ${LINENO}' ERR
 
 function usage_error {
-    echo mongo-sync: "$1"
-    echo "usage: mongo-sync push|pull|sync"
+    echo mongos: "$1"
+    echo "usage: mongos push|pull|sync"
     echo ""
     exit
 }
@@ -126,11 +126,11 @@ function load_configs {
         DEST_CREDENTIALS="-u $dest_username -p $dest_password"
     fi
 
-    TMPDIR=/tmp/mongo-sync/"$source_db"
+    TMPDIR=/tmp/mongos/"$source_db"
 }
 
 function banner {
-    echo mongo-sync:
+    echo mongos:
     echo -----------
 }
 
@@ -158,9 +158,9 @@ function pull {
         --gzip \
         --uri "$source_uri" \
         --db "$source_db" \
-        --authenticationDatabase "$source_authentication_db" \
         --username "$source_username" \
         --password "$source_password" \
+        --authenticationDatabase "$source_authentication_db" \
         --out "$TMPDIR" > /dev/null
 
     success_msg
@@ -181,9 +181,9 @@ function push {
         --drop \
         --db "$dest_db" \
         --uri "$dest_uri" \
-        --authenticationDatabase "$dest_authentication_db" \
         --username "$dest_username" \
         --password "$dest_password" \
+        --authenticationDatabase "$dest_authentication_db" \
         --dir "$TMPDIR"/"$source_db" > /dev/null
 
     success_msg
