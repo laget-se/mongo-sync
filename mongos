@@ -109,10 +109,12 @@ function load_configs {
     # - $source_host
     # - $source_username
     # - $source_password
+    # - $source_authentication_db
     # - $dest_db
     # - $dest_uhost
     # - $dest_username
     # - $dest_password
+    # - $dest_authentication_db
 
     SOURCE_CREDENTIALS=""
     if [[ ! -z $source_username ]] ; then
@@ -158,6 +160,7 @@ function pull {
         --host "$source_host" \
         --username "$source_username" \
         --password "$source_password" \
+        --authenticationDatabase "$source_authentication_db" \
         --out "$TMPDIR" > /dev/null
 
     success_msg
@@ -180,6 +183,7 @@ function push {
         --host "$dest_host" \
         --username "$dest_username" \
         --password "$dest_password" \
+        --authenticationDatabase "$dest_authentication_db" \
         --dir "$TMPDIR"/"$source_db" > /dev/null
 
     success_msg
