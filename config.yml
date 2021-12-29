@@ -2,14 +2,10 @@
 
 source:
   uri: 'uri'
-  username: 'mongo_user'
-  password: 'mongo_pass'
-  authentication:
-    db: 'admin'
+  username: 'username'
+  password: 'password'
 
 dest:
   uri: 'uri'
-  username: 'mongo_user'
-  password: 'mongo_pass'
-  authentication:
-    db: 'admin'
+  username: 'username'
+  password: 'password'
