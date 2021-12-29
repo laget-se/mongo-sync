@@ -106,10 +106,12 @@ function load_configs {
 
     # Loads:
     # - $source_db
-    # - $source_uri
+    # - $source_host
+    # - $source_username
     # - $source_password
     # - $dest_db
-    # - $dest_uri
+    # - $dest_uhost
+    # - $dest_username
     # - $dest_password
 
     SOURCE_CREDENTIALS=""
@@ -152,9 +154,10 @@ function pull {
     mongodump \
         --ssl \
         --gzip \
+        --db "$source_db" \
+        --host "$source_host" \
         --username "$source_username" \
         --password "$source_password" \
-        --uri "$source_uri" \
         --out "$TMPDIR" > /dev/null
 
     success_msg
@@ -173,9 +176,10 @@ function push {
         --ssl \
         --gzip \
         --drop \
+        --db "$dest_db" \
+        --host "$dest_host" \
         --username "$dest_username" \
         --password "$dest_password" \
-        --uri "$dest_uri" \
         --dir "$TMPDIR"/"$source_db" > /dev/null
 
     success_msg
