@@ -1,11 +1,11 @@
  # Mongo-Sync Configurations
 
 source:
-  uri: 'mongodb+srv://production-yhuxo.azure.mongodb.net/?authSource=admin'
-  username: 'newobdy'
-  password: 'xf4bjIRKHGcwSAb8'
+  host: 'host'
+  username: 'username'
+  password: 'password'
 
 dest:
-  uri: 'mongodb+srv://admin@test.esmtj.mongodb.net/?authSource=admin'
-  username: 'admin'
-  password: '1bjD7ZxR7xQou12Z'
+  host: 'host'
+  username: 'username'
+  password: 'password'
