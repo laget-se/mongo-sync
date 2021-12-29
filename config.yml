@@ -1,16 +1,14 @@
 # Mongo-Sync Configurations
 
 source:
-  db: 'local_db_name'
-  host: 'some.url.com'
+  uri: 'uri'
   username: 'mongo_user'
   password: 'mongo_pass'
   authentication:
     db: 'admin'
 
 dest:
-  db: 'remote_db_name'
-  host: 'some.url.com'
+  uri: 'uri'
   username: 'mongo_user'
   password: 'mongo_pass'
   authentication:
